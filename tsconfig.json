@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    // ==================== 项目布局设置 ====================
+    "target": "ES2020",                     // 编译目标：ES2020
+    "useDefineForClassFields": true,        // 正确的类字段语法
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // 包含的库文件
+    
+    // ==================== 模块系统设置 ====================
+    "module": "ESNext",                     // ES模块格式
+    "moduleResolution": "bundler",          // bundler模式（适配Vite）
+    "allowImportingTsExtensions": true,     // 允许导入.ts/.tsx文件
+    "resolveJsonModule": true,              // 允许导入JSON
+    "isolatedModules": true,                // 独立模块编译
+    "noEmit": true,                         // 不生成输出文件（Vite处理）
+    
+    // ==================== React相关配置 ====================
+    "jsx": "react-jsx",                     // React JSX转换
+    "allowSyntheticDefaultImports": true,   // 默认导入支持
+    "esModuleInterop": true,                // ES模块互操作
+    
+    // // ==================== 严格类型检查 ====================
+    "strict": true,                         // 启用严格类型检查
+    "noUnusedLocals": true,                 // 检查未使用的局部变量
+    "noUnusedParameters": true,             // 检查未使用的参数
+    "noFallthroughCasesInSwitch": true,     // 检查switch贯穿
+    
+    // ==================== 命名规范 ====================
+    "forceConsistentCasingInFileNames": true, // 强制文件名大小写一致
+    "skipLibCheck": true                    // 跳过库文件类型检查
+  },
+  
+  // ==================== 包含文件 ====================
+  "include": ["src"]
+}
